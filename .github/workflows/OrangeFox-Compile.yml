@@ -9,7 +9,7 @@ name: OrangeFox - Build
 on:
   workflow_dispatch:
     inputs:
-      MANIFEST_BRANCH:
+      MANIFEST_BRANCH: '12.1'
         description: 'OrangeFox Branch'
         required: true
         default: '12.1'
@@ -19,23 +19,23 @@ on:
         - 11.0
         - 10.0
         - 9.0
-      DEVICE_TREE:
+      DEVICE_TREE: 'https://github.com/bhuvneshbaghel7820/device_xiaomi_evergo.git'
         description: 'Custom Recovery Tree'
         required: true
         default: 'https://github.com/HuaZoffice/OFRP-device_xiaomi_atom'
-      DEVICE_TREE_BRANCH:
+      DEVICE_TREE_BRANCH: 'offp_12.1'
         description: 'Custom Recovery Tree Branch'
         required: true
         default: 'ofrp_12.1'
-      DEVICE_PATH:
+      DEVICE_PATH: 'device/xiaomi/evergo'
         description: 'Specify your device path.'
         required: true
         default: 'device/xiaomi/atom'
-      DEVICE_NAME:
+      DEVICE_NAME: 'evergo'
         description: 'Specify your Device Codename.'
         required: true
         default: 'atom'
-      BUILD_TARGET:
+      BUILD_TARGET: 'boot'
         description: 'Specify your Build Target'
         required: true
         default: 'recovery'
